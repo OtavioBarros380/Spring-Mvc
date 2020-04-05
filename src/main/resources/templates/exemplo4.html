@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exemplo 4 Spring MVC</title>
+</head>
+<body>
+	<h1>Exemplo 4 Spring MVC</h1>
+	
+	<!-- Ítens de uma lista não ordenada do html
+	obs: Esse objeto itens está no controller -->
+	<ul th:each="it : ${itens}">
+	
+		<!--Valor vem do getvalor e o texto do gettexto-->
+		<li>
+			<b th:text="${it.valor}"></b> - <span th:text="${it.texto}"></span><span th:if="${it.multi10}">*****</span>	
+		</li>
+</ul>		
+</body>
+</html>

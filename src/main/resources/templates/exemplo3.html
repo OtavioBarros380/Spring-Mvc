@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exemplo 3 Spring MVC</title>
+</head>
+<body>
+	<h1>Exemplo 3 Spring MVC</h1>
+	<p>nome: <span th:text="${nome}"></span></p>
+	<p>Número: <span th:text="${numero}"></span></p>
+	
+	<title> Verifica se a data foi informada Igual um if no java normal</title>	
+	<div th:if="${dtnasc != null}">
+		<p>Data nascimento: <span th:text="${dtnasc}"></span></p>
+		<p>Idade: <span th:text="${idade}"></span></p>
+	</div>
+	
+	<title>Como se fosse o else</title>
+	<div th:unless="${dtnasc != null}">
+		<p>Data de nascimento não informada</p>
+	</div>
+</body>
+</html>
